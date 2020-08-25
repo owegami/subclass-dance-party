@@ -21,7 +21,46 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid green;
   border-radius:10px;
   position:absolute;
+}
+/* .blinky {
+  animation-name: seizure;
+  animation-duration: .5s;
+  animation-direction: alternate-reverse;
+} */
+@keyframes seizure {
+  0% {border-color: white; transform: scale(1,1)}
+  100% {border-color: rgb(85, 85, 85); transform: scale(2,2)}
+}
+.punchy {
+  position: absolute;
+  border: 20px dotted;
+
+  border-radius: 1em;
+  animation-name: punchyJerk;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+@keyframes punchyJerk {
+  0% {width: 0px; transform: rotate(20deg);}
+  20% {width: 40px; transform: rotate(-40deg);}
+  40% {width: 10px; transform: rotate(60deg);}
+  60% {width: 70px; transform: rotate(-50deg);}
+  80% {width: 50px; transform: rotate(70deg);}
+  100% {width: 100px; transform: rotate(-60deg)}
+}
+.raver {
+  width: 50px;
+  height: 5px;
+  animation-name: spinner;
+  animation-duration: .5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+@keyframes spinner {
+  0% {transform: rotate(360deg)}
+  100% {transform: rotate(-360deg);}
 }

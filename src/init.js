@@ -22,9 +22,9 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = new makeBlinkyDancer(
-      $('body').height() * Math.random(),
-      $('body').width() * Math.random(),
+    var dancer = new dancerMakerFunction(
+      ($('body').height() - 170) * Math.random() + 50,
+      ($('body').width() - 140) * Math.random(),
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
