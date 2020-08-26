@@ -6,6 +6,7 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url(image/prepare-bare-wood-staining.jpg);
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -71,6 +72,13 @@ body, a:link, a:visited, a:active{
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
 }
+.raver:hover {
+  border-width: 2em;
+}
+
+.punchy:hover {
+  border-width: .5em;
+}
 @keyframes spinner {
   0% {transform: rotate(360deg)}
   100% {transform: rotate(-360deg);}
@@ -106,4 +114,12 @@ body, a:link, a:visited, a:active{
 @keyframes blink {
   0% {opacity: 100%}
   100% {background-color: cyan; opacity: 0%}
+}
+
+.lineUpButton {
+  float: left;
+}
+
+.linedUp {
+
 }
