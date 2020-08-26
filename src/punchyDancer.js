@@ -13,7 +13,7 @@ PunchyDancer.prototype.step = function () {
   // var randElem = Math.floor(Math.random() * 2);
 
   this.oldStep();
-  this.$node = $('<span class=" punchy"></span>');
+  this.$node = $('<span class="linedUp punchy"></span>');
 };
 
 PunchyDancer.prototype.oldStep = makeDancer.prototype.step;

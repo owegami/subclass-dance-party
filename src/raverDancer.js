@@ -9,7 +9,7 @@ RaverDancer.prototype.oldStep = makeDancer.prototype.step;
 
 RaverDancer.prototype.step = function () {
   this.oldStep();
-  this.$node = $('<span class="dancer raver"></span>');
+  this.$node = $('<span class="linedUp dancer raver"></span>');
   $('.raver').css('border-color', randomRGB());
 };
 
