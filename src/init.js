@@ -29,5 +29,9 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
+  $('.lineUpButton').on('click', function() {
+    $('.linedUp').css('top', '45vh');
+  });
 });
 
