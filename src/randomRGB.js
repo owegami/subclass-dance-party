@@ -27,7 +27,7 @@ var randomRed = function() {
     if (i < 2) {
       currentRand = Math.floor(Math.random() * 3) + 13;
     } else {
-      currentRand = Math.floor(Math.random() * 6);
+      currentRand = Math.floor(Math.random() * 10);
     }
     if (currentRand < 10) {
       hexArray.push(String(currentRand));
@@ -37,3 +37,20 @@ var randomRed = function() {
   }
   return '#' + hexArray.join('');
 };
+
+// var stepDanceFloor = Dancer.prototype.step;
+
+$(document).ready(function() {
+  // var colorUpdate = function() {
+  //   for (let i = 0; i < 25; i++) {
+  //     $('#' + i).css('background-color', randomRGB());
+  //   }
+  //   $('.danceFloor').animate({
+  //     opacity: '0%'
+  //     // 'background-color': randomRGB()
+  //   }, 1000, 'ease-in', colorUpdate());
+  // };
+  for (let i = 0; i < 25; i++) {
+    $('#' + i).css('background-color', randomRGB());
+  }
+});

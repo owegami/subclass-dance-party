@@ -1,5 +1,6 @@
 body, html{
-  height:100%;
+  width:100vw;
+  height:100vh;
 }
 body{
   margin: 0px;
@@ -24,12 +25,22 @@ body, a:link, a:visited, a:active{
   border:10px solid green;
   border-radius:10px;
   position:absolute;
+  animation-name: sway;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
 }
-/* .blinky {
+@keyframes sway {
+  0% {transform: translate(30px, 5px)}
+  50% {transform: translate(10px, 35px)}
+  1000% {transform: translate(20px, 10px)}
+}
+
+.blinky {
   animation-name: seizure;
   animation-duration: .5s;
   animation-direction: alternate-reverse;
-} */
+}
 @keyframes seizure {
   0% {border-color: white; transform: scale(1,1)}
   100% {border-color: rgb(85, 85, 85); transform: scale(2,2)}
@@ -50,7 +61,7 @@ body, a:link, a:visited, a:active{
   40% {width: 10px; transform: rotate(60deg);}
   60% {width: 70px; transform: rotate(-50deg);}
   80% {width: 50px; transform: rotate(70deg);}
-  100% {width: 100px; transform: rotate(-60deg)}
+  100% {border-color: red; width: 100px; transform: rotate(-60deg)}
 }
 .raver {
   width: 50px;
@@ -63,4 +74,36 @@ body, a:link, a:visited, a:active{
 @keyframes spinner {
   0% {transform: rotate(360deg)}
   100% {transform: rotate(-360deg);}
+}
+
+.container {
+  top: 35px;
+  left: 10px;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 3%;
+  margin-right: 3%;
+  z-index: -1;
+}
+
+.row{
+	width: 100%;
+  height: 20%;
+}
+
+.danceFloor {
+  float: left;
+  margin: 3px;
+  width: 18%;
+  height: 100%;
+  border-radius: 1em;
+  animation: blink;
+  animation-duration: 1.5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 100%}
+  100% {background-color: cyan; opacity: 0%}
 }
