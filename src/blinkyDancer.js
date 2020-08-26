@@ -1,4 +1,11 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+  if (window.dancers.length > 0) {
+    top = window.dancers[Math.floor(Math.random() * window.dancers.length)].top;
+    left = window.dancers[Math.floor(Math.random() * window.dancers.length)].left;
+
+    top += 5;
+    left += 5;
+  }
 
   makeDancer.call(this, top, left, timeBetweenSteps / 3);
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,

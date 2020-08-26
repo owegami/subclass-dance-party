@@ -20,7 +20,9 @@ PunchyDancer.prototype.oldStep = makeDancer.prototype.step;
 
 /*
 randomize speed of punchy dancer at initiation
+  $('.lineUpButton').on('click', function() {
 
+  });
 randomize punchy dancer colors within warm color spectrum
 
 randomize wallflower colors

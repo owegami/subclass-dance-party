@@ -8,6 +8,8 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
   this.stepColor();
   this.setPosition(top, left);
+  var copy = this;
+  window.dancers.push(copy);
 };
 
 makeDancer.prototype.step = function () {

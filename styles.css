@@ -115,11 +115,3 @@ body, a:link, a:visited, a:active{
   0% {opacity: 100%}
   100% {background-color: cyan; opacity: 0%}
 }
-
-.lineUpButton {
-  float: left;
-}
-
-.linedUp {
-
-}

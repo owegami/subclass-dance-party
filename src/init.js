@@ -33,5 +33,6 @@ $(document).ready(function() {
   $('.lineUpButton').on('click', function() {
     $('.linedUp').css('top', '45vh');
   });
+
 });
 
